@@ -60,7 +60,7 @@ model = dict(
             with_head=True,
         )),
     keypoint_head=dict(
-        type='TopDownSimpleHead',
+        type='TopdownHeatmapSimpleHead',
         in_channels=40,
         out_channels=channel_cfg['num_output_channels'],
         num_deconv_layers=0,
